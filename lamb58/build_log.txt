@@ -1,0 +1,65 @@
+$ npm install
+[...]
+$ npm run build
+
+> @svizzle/barchart@0.2.0 build ~/Dev/experiments/lamb58
+> rimraf dist && rollup -c
+
+
+src/BarchartVDiv.svelte → dist/BarchartV.browser.js...
+created dist/BarchartV.browser.js in 650ms
+
+src/index.js → dist/index.browser.js...
+created dist/index.browser.js in 421ms
+
+src/BarchartVDiv.svelte → dist/BarchartV.browser.min.js...
+-----------------------------
+Rollup File Analysis
+-----------------------------
+bundle size:    41.606 KB
+original size:  281.839 KB
+code reduction: 85.24 %
+module count:   5
+
+/Dev/experiments/lamb58/src/BarchartVDiv.svelte
+██████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░ 52.64 % (21.903 KB)
+/Dev/experiments/lamb58/node_modules/svelte/internal/index.mjs
+███████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 30.25 % (12.586 KB)
+/Dev/experiments/lamb58/node_modules/lamb/dist/lamb.esm.js
+██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 13.09 % (5.447 KB)
+/Dev/experiments/lamb58/node_modules/just-compare/index.js
+█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 3.32 % (1.383 KB)
+/Dev/experiments/lamb58/node_modules/yootils/yootils.es.js
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 0.69 % (287 Bytes)
+
+created dist/BarchartV.browser.min.js in 970ms
+
+src/index.js → dist/index.browser.min.js...
+-----------------------------
+Rollup File Analysis
+-----------------------------
+bundle size:    41.606 KB
+original size:  281.902 KB
+code reduction: 85.24 %
+module count:   6
+
+/Dev/experiments/lamb58/src/BarchartVDiv.svelte
+██████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░ 52.64 % (21.903 KB)
+/Dev/experiments/lamb58/node_modules/svelte/internal/index.mjs
+███████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 30.25 % (12.586 KB)
+/Dev/experiments/lamb58/node_modules/lamb/dist/lamb.esm.js
+██████░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 13.09 % (5.447 KB)
+/Dev/experiments/lamb58/node_modules/just-compare/index.js
+█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 3.32 % (1.383 KB)
+/Dev/experiments/lamb58/node_modules/yootils/yootils.es.js
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 0.69 % (287 Bytes)
+/Dev/experiments/lamb58/src/index.js
+░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ 0 % (0 Byte)
+
+created dist/index.browser.min.js in 948ms
+
+src/BarchartVDiv.svelte, src/index.js → dist...
+(!) Entry module "src/BarchartVDiv.svelte" is implicitly using "default" export mode, which means for CommonJS output that its default export is assigned to "module.exports". For many tools, such CommonJS output will not be interchangeable with the original ES module. If this is intended, explicitly set "output.exports" to either "auto" or "default", otherwise you might want to consider changing the signature of "src/BarchartVDiv.svelte" to use named exports only.
+https://rollupjs.org/guide/en/#outputexports
+src/BarchartVDiv.svelte
+created dist in 407ms
