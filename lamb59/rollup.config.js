@@ -28,6 +28,9 @@ const makeBanner = pkg => {
 
 const renameToMinJs = renameToExtension('.min.js');
 const banner = makeBanner(pkg);
+const removeComments = cleanup({
+	extensions: ['js', 'mjs']
+});
 const analyzer = analyze({
 	limit: 15,
 	root: path.resolve('../../../'),
@@ -63,7 +66,7 @@ const cjsConfig = {
 		resolve(),
 		commonjs(),
 		svelte(),
-		cleanup(),
+		removeComments,
 	],
 	treeshake
 };
@@ -83,7 +86,7 @@ const makeConfig = _.pipe([
 			resolve(),
 			commonjs(),
 			svelte(),
-			cleanup(),
+			removeComments,
 			// json(),
 			// buble({
 			//	 transforms: { dangerousForOf: true }
